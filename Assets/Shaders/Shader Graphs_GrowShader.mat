@@ -49,13 +49,13 @@ Material:
     m_Ints: []
     m_Floats:
     - _Clip: 1
-    - _Grow: 0
+    - _Grow: 1
     - _Metallic: 0
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Scale: 7.05
+    - _Scale: 0
     - _Smoothness: 0
     m_Colors:
-    - _Color: {r: 0, g: 1, b: 0.17647052, a: 1}
+    - _Color: {r: 1, g: 0.43590564, b: 0, a: 1}
     - _Vector3: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
