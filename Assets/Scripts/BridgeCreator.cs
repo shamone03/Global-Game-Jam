@@ -3,19 +3,17 @@ using UnityEngine.UIElements;
 
 public class BridgeCreator : MonoBehaviour {
     [SerializeField] private GameObject root;
-
-    [SerializeField] private float length;
-    [SerializeField] private float width;
+    [SerializeField] private GameObject island;
+    private Ray mouseRay;
     
-    // Start is called before the first frame update
-    private void Start() {
-        
-    }
-
     private void Update() {
         if (Input.GetMouseButtonDown(0)) {
-            GameObject rootObject = Instantiate(root, this.transform.position, Random.rotation); 
-            rootObject.transform.localScale *= length;
+            mouseRay = Camera.main.ScreenPointToRay(Input.mousePosition);
+            if (Physics.Raycast(mouseRay, out RaycastHit hit, 1000, 3)) {
+                Debug.Log("island");
+                GameObject rootObject = Instantiate(root);
+                rootObject.GetComponent<Bridge>().SetIsland(hit.point);
+            }
         }
     }
 }

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7344171996829688054}
   - component: {fileID: 5927975230150061907}
   - component: {fileID: 8475934312506088345}
+  - component: {fileID: 7095885560339206353}
   m_Layer: 0
   m_Name: unityvine
   m_TagString: Untagged
@@ -40,7 +41,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7971491366441581132}
-  m_Mesh: {fileID: 150581138598605843, guid: 296bb7bfb48330e45aad6d9aa1b5d5db, type: 3}
+  m_Mesh: {fileID: 150581138598605843, guid: dc19f03be07bba147a3c65f13b24a996, type: 3}
 --- !u!23 &8475934312506088345
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -83,3 +84,15 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &7095885560339206353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7971491366441581132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a98e74b0110a4942a509a011fd1e75b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
