@@ -110,6 +110,8 @@ GameObject:
   - component: {fileID: 2295020889370428297}
   - component: {fileID: 7323386747851851303}
   - component: {fileID: 1387889830}
+  - component: {fileID: 895202216}
+  - component: {fileID: 895202215}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -126,8 +128,8 @@ Transform:
   m_GameObject: {fileID: 3512199587209034568}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 25.079777, y: -10.897621, z: -3.700855}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2.54, y: 2.54, z: 2.54}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1102381002}
   m_Father: {fileID: 0}
@@ -212,3 +214,35 @@ MonoBehaviour:
   gun: {fileID: 1102381001}
   mousePosition: {x: 0, y: 0, z: 0}
   mouseScreenPosition: {x: 0, y: 0, z: 0}
+--- !u!114 &895202216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3512199587209034568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34592eee2c2b7f346bf8561a356d3393, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 895202215}
+  speed: 0
+--- !u!143 &895202215
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3512199587209034568}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 2
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
