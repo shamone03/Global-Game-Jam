@@ -3,7 +3,6 @@ using UnityEngine.UIElements;
 
 public class BridgeCreator : MonoBehaviour {
     [SerializeField] private GameObject root;
-    [SerializeField] private GameObject island;
     private Ray mouseRay;
     
     private void Update() {
@@ -11,7 +10,7 @@ public class BridgeCreator : MonoBehaviour {
             mouseRay = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(mouseRay, out RaycastHit hit, 1000, 3)) {
                 Debug.Log("island");
-                GameObject rootObject = Instantiate(root);
+                GameObject rootObject = Instantiate(root, transform.position, Quaternion.identity);
                 rootObject.GetComponent<Bridge>().SetIsland(hit.point);
             }
         }
