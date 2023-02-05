@@ -14,7 +14,7 @@ namespace PlayerScripts {
             horizontal = Input.GetAxis("Horizontal");
             vertical = Input.GetAxis("Vertical");
 
-            move = (Vector3.right * horizontal + Vector3.forward * vertical);
+            move = (transform.right * horizontal + transform.forward * vertical);
             move.y += downForce;
             controller.Move(move * (speed * Time.deltaTime));
         }
