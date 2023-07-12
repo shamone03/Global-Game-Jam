@@ -1,3 +1,3 @@
-# Global-Game-Jam
+# Root dam | Global Game Jam 2023 Submission
 
-# use 2021.3.18f1
+## [Submission](https://globalgamejam.org/2023/games/plantman-6)
